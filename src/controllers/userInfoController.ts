@@ -33,7 +33,7 @@ export async function userInfoController(req: Request, res: Response) {
     });
     // console.log("Repo name 🎈🎈 ", userName);
 
-    if (searchResponse && searchResponse.modifiedCount > 0) {
+    if (searchResponse && searchResponse.modifiedCount === 0) {
       const dataToSave = await data.save();
     }
 

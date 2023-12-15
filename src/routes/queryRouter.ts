@@ -1,16 +1,20 @@
 import express, { Application, Router } from "express";
 
-import { repoSearchController } from "../controllers/repoSearchController";
+// import { repoSearchController } from "../controllers/repoSearchController";
 import { repoInfoController } from "../controllers/repoInfoController";
 import { userInfoController } from "../controllers/userInfoController";
 import { queryController } from "../controllers/queryController";
 import { queryIdController } from "../controllers/queryIdController";
+import userDeleteController from "../controllers/userDeleteController";
+import reposDeleteController from "../controllers/reposDeleteController";
 
 const router = express.Router();
 
-router.get("/repos", repoSearchController);
-router.get("/repo-info", repoInfoController);
-router.get("/users-info", userInfoController);
+// router.get("/repos", repoSearchController);
+router.get("/github/repos", repoInfoController);
+router.delete("/github/repos/:id", reposDeleteController);
+router.get("/github/users", userInfoController);
+router.delete("/github/users/:id", userDeleteController);
 router.get("/queries", queryController);
 router.get("/queries/:id", queryIdController);
 
