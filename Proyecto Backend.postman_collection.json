@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "f552f075-8701-4a6e-9825-1cb641e9025a",
+		"name": "Proyecto Backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28761185"
+	},
+	"item": [
+		{
+			"name": "find user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/github/users?name=Pablo325i",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"github",
+						"users"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Pablo325i"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete user ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/github/users/657b76abb30dbefceca547fa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"github",
+						"users",
+						"657b76abb30dbefceca547fa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find repos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/github/repos?name=proyecto-backend",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"github",
+						"repos"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "proyecto-backend"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete repo ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/github/repos/657b7711b30dbefceca547fd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"github",
+						"repos",
+						"657b7711b30dbefceca547fd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtener todas las queries",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/queries",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"queries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtener queries por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/queries/657b7788b30dbefceca54803",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"queries",
+						"657b7788b30dbefceca54803"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
