@@ -11,7 +11,7 @@ export async function repoInfoController(req: Request, res: Response) {
   try {
     const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
 
-    console.log("Hello, %s");
+    // console.log("Hello, %s");
 
     const response = await octokit.rest.search.repos({
       q: repoName,
@@ -23,9 +23,9 @@ export async function repoInfoController(req: Request, res: Response) {
         q: repoName,
       },
     });
-    console.log("Repo name 🎈🎈 ", repoName);
+    // console.log("Repo name 🎈🎈 ", repoName);
     const dataToSave = await data.save();
-    console.log("dataToSave: ", dataToSave);
+    // console.log("dataToSave: ", dataToSave);
     res.json(response.data);
   } catch (error: any) {
     res.status(error.status || 500).json({ error: error.message });
