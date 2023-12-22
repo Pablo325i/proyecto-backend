@@ -34,12 +34,12 @@
 			"response": []
 		},
 		{
-			"name": "delete user ID",
+			"name": "delete queries",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/api/github/users/657b76abb30dbefceca547fa",
+					"raw": "http://localhost:3000/api/github/queries/6584dc151b0556248e7f93c5",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -48,8 +48,8 @@
 					"path": [
 						"api",
 						"github",
-						"users",
-						"657b76abb30dbefceca547fa"
+						"queries",
+						"6584dc151b0556248e7f93c5"
 					]
 				}
 			},
@@ -77,28 +77,6 @@
 							"key": "name",
 							"value": "proyecto-backend"
 						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "delete repo ID",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:3000/api/github/repos/657b7711b30dbefceca547fd",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"api",
-						"github",
-						"repos",
-						"657b7711b30dbefceca547fd"
 					]
 				}
 			},
