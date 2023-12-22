@@ -5,16 +5,14 @@ import { repoInfoController } from "../controllers/repoInfoController";
 import { userInfoController } from "../controllers/userInfoController";
 import { queryController } from "../controllers/queryController";
 import { queryIdController } from "../controllers/queryIdController";
-import userDeleteController from "../controllers/userDeleteController";
-import reposDeleteController from "../controllers/reposDeleteController";
+import queryDeleteController from "../controllers/queryDeleteController";
 
 const router = express.Router();
 
 // router.get("/repos", repoSearchController);
 router.get("/github/repos", repoInfoController);
-router.delete("/github/repos/:id", reposDeleteController);
 router.get("/github/users", userInfoController);
-router.delete("/github/users/:id", userDeleteController);
+router.delete("/github/queries/:id", queryDeleteController);
 router.get("/queries", queryController);
 router.get("/queries/:id", queryIdController);
 
